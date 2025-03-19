@@ -1,0 +1,20 @@
+Here is the comprehensive plan for addressing the AI prediction issues in the project:
+
+### Plan:
+
+1. **Update `backend/routes/metrics.js`**:
+   - Review and enhance the AI prediction logic in the `predictFutureMetrics` function. This may involve:
+     - Adjusting the model architecture (e.g., adding more layers or units).
+     - Modifying training parameters such as the number of epochs to ensure the model learns effectively.
+     - Ensuring that the input data is correctly formatted and representative of the underlying trends.
+
+2. **Review `backend/server.js`**:
+   - Confirm that the metrics route is correctly set up to handle requests and that any necessary middleware is in place. This ensures that the backend can process incoming requests related to AI predictions without issues.
+
+3. **Modify `frontend/src/components/Dashboard.js`**:
+   - Review the logic for adjusting predictions to ensure it accurately reflects the predicted values returned from the backend.
+   - Verify that the data structure being passed to the chart is correct for rendering both actual and predicted metrics.
+
+### Follow-up Steps:
+- After implementing the changes, test the application to ensure that the AI predictions are functioning correctly and displaying as expected in the dashboard.
+- Monitor the console for any errors during the prediction process and adjust the logic as necessary.
